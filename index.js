@@ -4,7 +4,7 @@ const loadAutoCompleteAPI = params => {
 
   script.type = 'text/javascript';
 
-  script.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=' + version + '&appId=' + appId + '&autoLogAppEvents=1';
+  script.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=' + params.version + '&appId=' + params.appId + '&autoLogAppEvents=1';
 
   document.querySelector('head').appendChild(script);
 };
